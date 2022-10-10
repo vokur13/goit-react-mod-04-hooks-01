@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-02-feedback/static/css/main.1cb30bc7.css",
-    "main.js": "/goit-react-hw-02-feedback/static/js/main.1744ba76.js",
-    "index.html": "/goit-react-hw-02-feedback/index.html",
-    "main.1cb30bc7.css.map": "/goit-react-hw-02-feedback/static/css/main.1cb30bc7.css.map",
-    "main.1744ba76.js.map": "/goit-react-hw-02-feedback/static/js/main.1744ba76.js.map"
+    "main.css": "/goit-react-mod-04-hooks-01/static/css/main.a46d3007.css",
+    "main.js": "/goit-react-mod-04-hooks-01/static/js/main.795e69cc.js",
+    "static/media/error.jpg": "/goit-react-mod-04-hooks-01/static/media/error.7d86105a62bf3b28ec78.jpg",
+    "static/media/avatar.png": "/goit-react-mod-04-hooks-01/static/media/avatar.e44fc4e22a4ce55fbe43.png",
+    "index.html": "/goit-react-mod-04-hooks-01/index.html",
+    "main.a46d3007.css.map": "/goit-react-mod-04-hooks-01/static/css/main.a46d3007.css.map",
+    "main.795e69cc.js.map": "/goit-react-mod-04-hooks-01/static/js/main.795e69cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cb30bc7.css",
-    "static/js/main.1744ba76.js"
+    "static/css/main.a46d3007.css",
+    "static/js/main.795e69cc.js"
   ]
 }
