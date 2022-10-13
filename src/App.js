@@ -3,7 +3,7 @@ import AppBar from './components/AppBar/AppBar';
 import SignupForm from './components/SignupForm/SignupForm';
 import ColorPicker from './components/ColorPicker/ColorPicker';
 import Counter from './components/Counter/Counter';
-import Clock from './components/Clock/Clock';
+import { Clock } from './components/Clock/Clock';
 import PokemonView from './views/PokemonView';
 
 const colorPickerOptions = [

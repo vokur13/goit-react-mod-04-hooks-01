@@ -1,23 +1,19 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from './Clock.module.css';
 
-export default function Clock() {
+export const Clock = () => {
   const [time, setTime] = useState(() => new Date());
   const intervalId = useRef(null);
 
   useEffect(() => {
     intervalId.current = setInterval(() => {
-      console.log('Это интервал каждые 2000ms ' + Date.now());
+      //       console.log('Это интервал каждые 1000ms ' + Date.now());
       setTime(new Date());
-    }, 2000);
-
-    return () => {
-      console.log('Это функция очистки перед следующим вызовом useEffect');
-      stop();
-    };
+    }, 1000);
   }, []);
 
   const stop = () => {
+    console.log('Stop');
     clearInterval(intervalId.current);
   };
 
@@ -31,9 +27,41 @@ export default function Clock() {
       </button>
     </div>
   );
-}
+};
 
-// class OldClock extends Component {
+// export default function Clock() {
+//   const [time, setTime] = useState(() => new Date());
+//   const intervalId = useRef(null);
+
+//   useEffect(() => {
+//     intervalId.current = setInterval(() => {
+//       console.log('Это интервал каждые 2000ms ' + Date.now());
+//       setTime(new Date());
+//     }, 2000);
+
+//     return () => {
+//       console.log('Это функция очистки перед следующим вызовом useEffect');
+//       stop();
+//     };
+//   }, []);
+
+//   const stop = () => {
+//     clearInterval(intervalId.current);
+//   };
+
+//   return (
+//     <div className={styles.container}>
+//       <p className={styles.clockface}>
+//         Текущее время: {time.toLocaleTimeString()}
+//       </p>
+//       <button type="button" onClick={stop}>
+//         Остановить
+//       </button>
+//     </div>
+//   );
+// }
+
+// class ProtoClock extends Component {
 //   state = {
 //     time: new Date(),
 //   };
