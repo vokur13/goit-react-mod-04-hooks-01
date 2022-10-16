@@ -10,15 +10,28 @@ export const Clock = () => {
       //       console.log('Это интервал каждые 1000ms ' + Date.now());
       setTime(new Date());
     }, 1000);
-  }, []);
+
+    console.log(time);
+
+    return () => {
+      console.log('Cleanup Function');
+      stop();
+    };
+  }, [time]);
 
   const stop = () => {
-    console.log('Stop');
     clearInterval(intervalId.current);
   };
 
   return (
     <div className={styles.container}>
+      <button
+        onClick={() => {
+          setTime(new Date());
+        }}
+      >
+        Reset StateTime
+      </button>
       <p className={styles.clockface}>
         Текущее время: {time.toLocaleTimeString()}
       </p>
